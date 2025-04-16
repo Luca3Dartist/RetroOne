@@ -6,8 +6,18 @@ document.addEventListener("DOMContentLoaded", async () => {
     localStorage.setItem("deviceId", deviceId);
   }
 
+  let ipAddress = "Unknown";
+  try {
+    const ipResponse = await fetch("https://api.ipify.org?format=json");
+    const ipData = await ipResponse.json();
+    ipAddress = ipData.ip;
+  } catch (error) {
+    console.error("Could not fetch IP address:", error);
+  }
+
   const data = {
     deviceId: deviceId,
+    ipAddress: ipAddress,
     gameSlug: window.gameSlug || "",
     referrer: document.referrer,
     userAgent: navigator.userAgent,
