@@ -3,90 +3,252 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RetroOne - Relive the Classics</title>
+    <title>RetroOne - Next-Gen Retro Gaming</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
-    <script src="send.js" defer></script>
   </head>
   <body>
-    <header>RETROONE CONSOLE</header>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#features">Features</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#buy">Buy</a>
-    </nav>
+    <div class="cursor-glow"></div>
 
-    <section class="hero" id="home">
-      <h1>Welcome to RetroOne</h1>
-      <p>
-        The ultimate nostalgia machine. Reviving 8-bit dreams in HD. Plug &
-        play, pixel-perfect gaming.
-      </p>
-      <button class="btn" id="getStartedBtn">Get Started</button>
-    </section>
+    <header>
+      <div class="logo">
+        <span class="logo-text">RETRO<span class="accent">ONE</span></span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#buy" class="nav-link">Get Yours</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </header>
 
-    <section id="features">
-      <h2>Top Features</h2>
-      <div class="features">
-        <div class="feature">
-          <i class="fas fa-gamepad"></i>
-          <h3>100+ Games</h3>
-          <p>All your childhood favorites built-in, no downloads needed.</p>
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-content">
+          <h1 class="glitch" data-text="RETROONE">RETROONE</h1>
+          <p class="subtitle">Nostalgia Reimagined</p>
+          <p class="description">
+            Experience your favorite classics in stunning modern clarity. The
+            perfect fusion of retro gaming and cutting-edge technology.
+          </p>
+          <div class="cta-buttons">
+            <button class="btn primary-btn" id="getStartedBtn">
+              <span>Explore</span>
+              <i class="fas fa-chevron-right"></i>
+            </button>
+            <button class="btn secondary-btn" id="learnMoreBtn">
+              <span>Watch Demo</span>
+              <i class="fas fa-play"></i>
+            </button>
+          </div>
         </div>
-        <div class="feature">
-          <i class="fas fa-tv"></i>
-          <h3>HDMI Output</h3>
-          <p>Connect to any modern screen, zero lag, full retro glory.</p>
+        <div class="hero-image">
+          <div class="console-display">
+            <img src="img/console2.png" alt="Hero" class="hero-img" />
+            <div class="scanlines"></div>
+            <div class="glow"></div>
+          </div>
         </div>
-        <div class="feature">
-          <i class="fas fa-cogs"></i>
-          <h3>Custom Themes</h3>
-          <p>Switch UI styles from CRT to neon grid in seconds.</p>
+      </section>
+
+      <section id="features" class="features-section">
+        <h2>Advanced Features</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-gamepad"></i>
+            </div>
+            <h3>100+ Classic Games</h3>
+            <p>
+              Pre-loaded library featuring all your childhood favorites with
+              zero configuration required.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-microchip"></i>
+            </div>
+            <h3>Modern Hardware</h3>
+            <p>
+              4K HDMI output, WiFi connectivity and perfect emulation with zero
+              input lag.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-paint-brush"></i>
+            </div>
+            <h3>Custom UI Themes</h3>
+            <p>
+              Switch between authentic retro looks or modern interfaces with a
+              single click.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-sd-card"></i>
+            </div>
+            <h3>Expandable Storage</h3>
+            <p>
+              Add your own game collection with the built-in SD card slot and
+              USB ports.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-headphones"></i>
+            </div>
+            <h3>Chiptune Player</h3>
+            <p>
+              Browse and play iconic 8-bit and 16-bit soundtracks in
+              high-fidelity audio.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-wifi"></i>
+            </div>
+            <h3>Online Multiplayer</h3>
+            <p>
+              Challenge friends to your favorite classics with built-in network
+              play capabilities.
+            </p>
+          </div>
         </div>
-        <div class="feature">
-          <i class="fas fa-headphones"></i>
-          <h3>Soundtrack Mode</h3>
-          <p>Play chiptune classics and 8-bit remixes while browsing.</p>
+      </section>
+
+      <section id="gallery" class="gallery-section">
+        <h2>RetroOne Showcase</h2>
+        <div class="gallery-container">
+          <div class="gallery-controls">
+            <button class="gallery-arrow prev">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="gallery-arrow next">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+          <div class="gallery-track">
+            <div class="gallery-slide">
+              <img
+                src="/img/console.png"
+                alt="RetroOne Console Front View"
+                class="responsive-image"
+              />
+              <p>RetroOne Classic Edition</p>
+            </div>
+            <div class="gallery-slide">
+              <img
+                src="/img/nice.png"
+                alt="RetroOne with Controllers"
+                class="responsive-image"
+              />
+              <p>Wireless Controllers with 30+ Hour Battery Life</p>
+            </div>
+            <div class="gallery-slide">
+              <img
+                src="/img/rlyNice.png"
+                alt="RetroOne UI Example"
+                class="responsive-image"
+              />
+              <p>Clean, Customizable Interface</p>
+            </div>
+            <div class="gallery-slide">
+              <img
+                src="/img/anotherLVL.png"
+                alt="RetroOne Connected to TV"
+                class="responsive-image"
+              />
+              <p>Perfect Pixel Scaling on Modern Displays</p>
+            </div>
+          </div>
+          <div class="gallery-dots"></div>
+        </div>
+        <a href="about.html" class="learn-more">
+          Learn about the technology behind RetroOne
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </section>
+
+      <section id="buy" class="buy-section">
+        <div class="buy-content">
+          <h2>Get Your RetroOne</h2>
+          <div class="pricing">
+            <div class="price">$99</div>
+            <div class="plan">Standard Edition</div>
+          </div>
+          <ul class="features-list">
+            <li><i class="fas fa-check"></i> RetroOne Console</li>
+            <li><i class="fas fa-check"></i> 2 Wireless Controllers</li>
+            <li><i class="fas fa-check"></i> HDMI Cable</li>
+            <li><i class="fas fa-check"></i> Power Adapter</li>
+            <li><i class="fas fa-check"></i> 100+ Pre-loaded Games</li>
+          </ul>
+          <button class="btn primary-btn" id="buyBtn">
+            <span>Pre-Order Now</span>
+            <i class="fas fa-shopping-cart"></i>
+          </button>
+          <p class="shipping-note">
+            Free shipping. 30-day money back guarantee.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <span class="logo-text">RETRO<span class="accent">ONE</span></span>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#buy">Buy</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Support</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">User Manual</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Warranty</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-discord"></i></a>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
-
-    <section id="gallery">
-      <h2>Console Gallery</h2>
-      <div class="gallery">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/3/35/Atari-2600-Wood-4Sw-Set.jpg"
-          alt="console"
-        />
-        <img
-          src="https://cdn.pixabay.com/photo/2016/03/27/19/53/video-game-console-1284010_960_720.jpg"
-          alt="console2"
-        />
-        <img
-          src="https://cdn.pixabay.com/photo/2017/06/23/17/49/joystick-2431962_1280.jpg"
-          alt="controller"
-        />
-      </div>
-      <a class="page-link" href="about.html"
-        >Learn more about the RetroOne legacy →</a
-      >
-    </section>
-
-    <section class="hero" id="buy">
-      <h2>Buy Now</h2>
-      <p>Get yours today and start your retro journey — only $99.</p>
-      <button class="btn" id="buyBtn">Buy RetroOne</button>
-    </section>
-
-    <div class="footer">© 2025 RetroOne Inc. | Powered by Pixels & Passion</div>
+      <div class="copyright">© 2025 RetroOne Inc. All Rights Reserved.</div>
+    </footer>
   </body>
 </html>
